@@ -1,0 +1,359 @@
+body{
+    font-family:Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white
+    }
+    
+header{
+        background-color: #fbfcfa;
+        color: rgba(9, 242, 102, 0.986);
+        text-align: center;
+        }
+
+
+ nav a:hover{text-decoration: underline;}
+
+
+ body {
+    background-image: url('images/farmwallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* makes it scroll with the page */
+    font-family: Arial, sans-serif;}
+    
+section{width: 50%;}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .team-photo {
+    max-height: 50px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: white;
+  }
+  
+  h1{
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    background: linear-gradient(to right, #4caf50, #81c784);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .hero img {
+    margin-top: 20px;
+    border-radius: 10px;
+    max-height: 300px;
+  }
+
+  .before-price {
+    text-decoration: line-through;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .after-price {
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .feature {
+    background-color: white;
+    border-left: 5px solid #4caf50;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-weight: 500;
+  }
+
+ 
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 40px;
+  }
+
+  h2 {
+    margin-top: 1rem;
+  }
+  
+  blockquote {
+    background-color: #f0f0f0;
+    border-left: 5px solid #4caf50;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+  }
+
+ /* General layout and fonts */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fef9;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: rgb(248, 250, 248);
+  background: linear-gradient(to right, #4caf50, #81c784);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+
+header input[type="text"] {
+  margin-top: 10px;
+  padding: 8px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Filter section */
+.filters {
+  background-color: none;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.filters label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.filters select,
+.filters input[type="range"] {
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Grid layout for products */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  padding: 40px;
+}
+
+.item {
+  background-color: white;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+}
+
+.item img {
+  max-height: 160px;
+  width: auto;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+
+.promotions {
+  background-color: none;
+  padding: 30px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Related Products */
+.related-products {
+  background-color: none;
+  padding: 30px;
+}
+
+.related-products .product {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  margin: auto;
+  text-align:left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.related-products .product img {
+  max-height: 150px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.related-products .product button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.related-products .product button:hover {
+  background-color: #388e3c;
+}
+
+.shop-title {
+  background-color: none;
+  color: white;        
+  padding: 20px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.add-to-cart {
+  background-color: #28a745; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #218838; }
+
+  body {
+    color: black;
+    font-weight: bold;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  #searchBar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #45a049;
+  }
+
+  .contact-page {
+    color: white;
+    background-color: #0f0f0f; /* optional dark background */
+  }
+  
+  .contact-container {
+    background-color: white;
+    color: #000; /* text turns black inside the container */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+
+ 
+
+  /* Apply background to the entire page */
+body.contact-page {
+  font-family: Arial, sans-serif;
+  background-image: url('images/farmwallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+/* Contact content container */
+.contact-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.badge {
+  font-size: 0.9rem;
+  padding: 0.5em 0.8em;
+}
+
+
+
+
+

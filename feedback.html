@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Agro Equip Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+
+  <style>
+   body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('images/farmwallpaper.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding-top: 70px;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: flex-start; /* Adjust if you want it vertically centered: use 'center' */
+      min-height: calc(100vh - 70px);
+      padding: 40px 20px;
+    }
+
+    .content-area {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="idx.html">AgroEquip</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="idx.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="abt.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-container">
+
+    <!-- Main Content (right Side) -->
+    <div class="content-area">
+      <h2>Send Feedback to AgroEquip</h2>
+      <form action="send_email.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Feedback</button>
+      </form>
+    
+  </div>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+      alert("Thank you for your feedback!");
+    });
+  </script>
+  
+  <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+      if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields.");
+        event.preventDefault(); // Stop form from submitting
+        return;
+      }
+  
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        event.preventDefault();
+        return;
+      }
+  
+      alert("Thank you for your feedback!");
+    });
+  </script>
+  
+
+</body>
+</html>
